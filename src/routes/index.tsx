@@ -144,7 +144,7 @@ function Hero() {
         </div>
 
         <div className="relative justify-self-start lg:justify-self-end">
-          <div className="relative h-40 w-32 overflow-hidden rounded-2xl border border-border shadow-[0_20px_50px_-20px_oklch(0.2_0.02_60/0.35)] md:h-48 md:w-40">
+          <div className="relative h-56 w-44 overflow-hidden rounded-2xl border border-border shadow-[0_20px_50px_-20px_oklch(0.2_0.02_60/0.35)] md:h-72 md:w-56">
             <img
               src={drishyaAsset.url}
               alt="Drishya Gaire"
