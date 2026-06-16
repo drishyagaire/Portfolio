@@ -183,14 +183,14 @@ function About() {
       <div className={`mx-auto grid max-w-6xl grid-cols-1 gap-16 md:grid-cols-12 ${shown ? "animate-fade-up" : "opacity-0"}`}>
         <div className="md:col-span-4">
           <div className="font-mono-xs text-muted-foreground">(About)</div>
-          <h2 className="font-display mt-4 text-4xl md:text-5xl">A note, in plain words.</h2>
+          <h2 className="font-display mt-4 text-4xl md:text-5xl">About.</h2>
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            I'm a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, building things that sit between everyday software and machine learning.
+            I am a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, focused on developing software that bridges practical application engineering with applied machine learning.
           </p>
           <p>
-            Lately I've been writing FastAPI services that listen to voices, training CNNs on medical images, and crafting React interfaces I'd actually want to use. I care about <em className="font-display text-foreground">small details</em> — the typography, the latency, the way a loading state feels.
+            My recent work spans designing FastAPI services for real-time audio processing, training convolutional neural networks on medical imaging datasets, and building production-grade React interfaces. I place a strong emphasis on <em className="font-display text-foreground">engineering precision</em> — performance, interface clarity, and the quality of every user-facing detail.
           </p>
           <div className="grid grid-cols-2 gap-6 border-t border-border pt-8 sm:grid-cols-3">
             {[
