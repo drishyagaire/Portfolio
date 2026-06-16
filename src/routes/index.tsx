@@ -237,26 +237,16 @@ function ProjectCard({ p, flip }: { p: Project; flip: boolean }) {
   return (
     <article
       ref={ref}
-      className={`group grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12 ${shown ? "animate-fade-up" : "opacity-0"}`}
+      className={`group grid grid-cols-1 gap-6 border-t border-border pt-12 md:grid-cols-12 md:gap-12 ${shown ? "animate-fade-up" : "opacity-0"}`}
     >
-      <div className={`md:col-span-5 ${flip ? "md:order-2 md:col-start-8" : ""}`}>
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-muted to-paper">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-display text-[10rem] leading-none text-accent/15 transition-transform duration-700 group-hover:scale-110 group-hover:text-accent/30">
-              {p.num}
-            </span>
-          </div>
-          <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-            <span className="font-mono-xs text-muted-foreground">{p.year}</span>
-            <span className="font-display italic text-foreground">{p.name.split(" ")[0]}</span>
-          </div>
-        </div>
+      <div className="md:col-span-3">
+        <div className="font-mono-xs text-muted-foreground">Project · {p.num}</div>
+        <div className="font-mono-xs mt-2 text-muted-foreground/70">{p.year}</div>
       </div>
-      <div className={`md:col-span-6 md:self-center ${flip ? "md:order-1 md:col-start-1" : "md:col-start-7"}`}>
-        <div className="font-mono-xs mb-3 text-muted-foreground">Project · {p.num}</div>
-        <h3 className="font-display text-4xl md:text-5xl">{p.name}</h3>
-        <p className="font-display mt-3 text-2xl italic text-accent">{p.tagline}</p>
-        <p className="mt-5 max-w-lg leading-relaxed text-muted-foreground">{p.description}</p>
+      <div className="md:col-span-9">
+        <h3 className="font-display text-4xl md:text-6xl tracking-tight transition-colors group-hover:text-accent">{p.name}</h3>
+        <p className="font-display mt-3 text-2xl italic text-accent/90">{p.tagline}</p>
+        <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">{p.description}</p>
         <div className="mt-6 flex flex-wrap gap-2">
           {p.stack.map((s) => (
             <span key={s} className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">{s}</span>
@@ -266,7 +256,7 @@ function ProjectCard({ p, flip }: { p: Project; flip: boolean }) {
           {p.demo && (
             <a href={p.demo} target="_blank" rel="noreferrer" className="link-underline">Live demo ↗</a>
           )}
-          <a href={p.github} target="_blank" rel="noreferrer" className="link-underline">GitHub ↗</a>
+          <a href={p.github} target="_blank" rel="noreferrer" className="link-underline">View on GitHub ↗</a>
         </div>
       </div>
     </article>
