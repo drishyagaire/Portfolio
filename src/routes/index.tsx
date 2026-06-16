@@ -27,9 +27,9 @@ const projects: Project[] = [
   {
     num: "01",
     name: "Help Sathi",
-    tagline: "A safety companion that listens.",
+    tagline: "A safety companion engineered to listen.",
     description:
-      "An Android app that detects distress in Nepali and English speech in real time, then quietly triggers SOS alerts with location to pre-set contacts.",
+      "An Android application performing real-time distress detection across Nepali and English speech, automatically dispatching SOS alerts with live location to designated emergency contacts.",
     stack: ["React Native", "FastAPI", "CNN + GRU", "Whisper AI", "MongoDB", "Firebase FCM"],
     year: "2025",
     github: "https://github.com/drishyagaire",
@@ -37,9 +37,9 @@ const projects: Project[] = [
   {
     num: "02",
     name: "Brain Tumor Detection",
-    tagline: "Reading MRI scans, one pixel at a time.",
+    tagline: "Medical imaging powered by deep learning.",
     description:
-      "A comparative study of CNN, VGG19 and ResNet50 for classifying brain tumors from MRI images — built end-to-end with augmentation, transfer learning and evaluation.",
+      "A comparative research study evaluating CNN, VGG19, and ResNet50 architectures for brain tumor classification from MRI scans — implemented end-to-end with data augmentation, transfer learning, and quantitative model evaluation.",
     stack: ["Python", "CNN", "VGG19", "ResNet50"],
     year: "2024",
     github: "https://github.com/drishyagaire",
@@ -47,9 +47,9 @@ const projects: Project[] = [
   {
     num: "03",
     name: "Interview AI",
-    tagline: "A quieter way to prepare for the loud rooms.",
+    tagline: "Intelligent preparation for high-stakes interviews.",
     description:
-      "A full-stack generative AI platform for resume analysis, JD matching, skill-gap detection, mock interviews and ATS-friendly resume generation.",
+      "A full-stack generative AI platform providing resume analysis, job description matching, skill-gap identification, simulated mock interviews, and ATS-optimized resume generation.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Puppeteer"],
     year: "2025",
     github: "https://github.com/drishyagaire",
