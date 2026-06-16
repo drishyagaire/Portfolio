@@ -27,9 +27,9 @@ const projects: Project[] = [
   {
     num: "01",
     name: "Help Sathi",
-    tagline: "A safety companion that listens.",
+    tagline: "A safety companion engineered to listen.",
     description:
-      "An Android app that detects distress in Nepali and English speech in real time, then quietly triggers SOS alerts with location to pre-set contacts.",
+      "An Android application performing real-time distress detection across Nepali and English speech, automatically dispatching SOS alerts with live location to designated emergency contacts.",
     stack: ["React Native", "FastAPI", "CNN + GRU", "Whisper AI", "MongoDB", "Firebase FCM"],
     year: "2025",
     github: "https://github.com/drishyagaire",
@@ -37,9 +37,9 @@ const projects: Project[] = [
   {
     num: "02",
     name: "Brain Tumor Detection",
-    tagline: "Reading MRI scans, one pixel at a time.",
+    tagline: "Medical imaging powered by deep learning.",
     description:
-      "A comparative study of CNN, VGG19 and ResNet50 for classifying brain tumors from MRI images — built end-to-end with augmentation, transfer learning and evaluation.",
+      "A comparative research study evaluating CNN, VGG19, and ResNet50 architectures for brain tumor classification from MRI scans — implemented end-to-end with data augmentation, transfer learning, and quantitative model evaluation.",
     stack: ["Python", "CNN", "VGG19", "ResNet50"],
     year: "2024",
     github: "https://github.com/drishyagaire",
@@ -47,9 +47,9 @@ const projects: Project[] = [
   {
     num: "03",
     name: "Interview AI",
-    tagline: "A quieter way to prepare for the loud rooms.",
+    tagline: "Intelligent preparation for high-stakes interviews.",
     description:
-      "A full-stack generative AI platform for resume analysis, JD matching, skill-gap detection, mock interviews and ATS-friendly resume generation.",
+      "A full-stack generative AI platform providing resume analysis, job description matching, skill-gap identification, simulated mock interviews, and ATS-optimized resume generation.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Puppeteer"],
     year: "2025",
     github: "https://github.com/drishyagaire",
@@ -118,43 +118,40 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="relative px-6 pt-40 pb-24 md:px-12 md:pt-48 md:pb-32">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-end">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 lg:grid-cols-[1fr_auto] lg:items-start">
         <div className="animate-fade-up">
           <div className="font-mono-xs mb-8 flex items-center gap-3 text-muted-foreground">
             <span className="inline-block h-px w-8 bg-foreground/60" />
             Portfolio · 2026
           </div>
           <h1 className="font-display text-[clamp(2.75rem,9vw,7.5rem)] leading-[0.95] tracking-tight">
-            Hi, I'm <span className="italic text-accent">Drishya</span>
-            <br />
-            Gaire.
+            Drishya <span className="italic text-accent">Gaire</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            I teach machines to listen, and browsers to feel. Computer engineering
-            student in Kathmandu, somewhere between a <em className="font-display text-foreground">React component</em> and a <em className="font-display text-foreground">convolutional layer</em>.
+            Computer Engineering student based in Kathmandu, building reliable
+            software at the intersection of <em className="font-display text-foreground">full-stack development</em> and <em className="font-display text-foreground">applied machine learning</em>.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <a
               href="#work"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground px-7 py-4 text-sm text-background transition-all hover:bg-accent"
             >
-              See what I'm building
+              View selected work
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
-            <a href="#connect" className="link-underline text-sm">Say hello</a>
+            <a href="#connect" className="link-underline text-sm">Get in touch</a>
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-sm lg:mx-0">
-          <div className="absolute -inset-4 rotate-3 rounded-[2rem] bg-accent/10" aria-hidden />
-          <div className="relative overflow-hidden rounded-[1.5rem] border border-border shadow-[0_30px_80px_-30px_oklch(0.2_0.02_60/0.35)]">
+        <div className="relative justify-self-start lg:justify-self-end">
+          <div className="relative h-40 w-32 overflow-hidden rounded-2xl border border-border shadow-[0_20px_50px_-20px_oklch(0.2_0.02_60/0.35)] md:h-48 md:w-40">
             <img
               src={drishyaAsset.url}
               alt="Drishya Gaire"
-              className="aspect-[4/5] w-full object-cover grayscale-[15%] transition-all duration-700 hover:grayscale-0 hover:scale-105"
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
-          <div className="font-mono-xs absolute -bottom-4 -left-4 rounded-full border border-border bg-paper px-4 py-2 text-muted-foreground">
+          <div className="font-mono-xs mt-3 text-right text-muted-foreground">
             Kathmandu, NP
           </div>
         </div>
@@ -186,14 +183,14 @@ function About() {
       <div className={`mx-auto grid max-w-6xl grid-cols-1 gap-16 md:grid-cols-12 ${shown ? "animate-fade-up" : "opacity-0"}`}>
         <div className="md:col-span-4">
           <div className="font-mono-xs text-muted-foreground">(About)</div>
-          <h2 className="font-display mt-4 text-4xl md:text-5xl">A note, in plain words.</h2>
+          <h2 className="font-display mt-4 text-4xl md:text-5xl">About.</h2>
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            I'm a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, building things that sit between everyday software and machine learning.
+            I am a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, focused on developing software that bridges practical application engineering with applied machine learning.
           </p>
           <p>
-            Lately I've been writing FastAPI services that listen to voices, training CNNs on medical images, and crafting React interfaces I'd actually want to use. I care about <em className="font-display text-foreground">small details</em> — the typography, the latency, the way a loading state feels.
+            My recent work spans designing FastAPI services for real-time audio processing, training convolutional neural networks on medical imaging datasets, and building production-grade React interfaces. I place a strong emphasis on <em className="font-display text-foreground">engineering precision</em> — performance, interface clarity, and the quality of every user-facing detail.
           </p>
           <div className="grid grid-cols-2 gap-6 border-t border-border pt-8 sm:grid-cols-3">
             {[
@@ -223,7 +220,7 @@ function Projects() {
         <div className="mb-20 flex items-end justify-between">
           <div>
             <div className="font-mono-xs text-muted-foreground">(Selected Work)</div>
-            <h2 className="font-display mt-4 text-5xl md:text-7xl">Things I've made.</h2>
+            <h2 className="font-display mt-4 text-5xl md:text-7xl">Selected Projects.</h2>
           </div>
           <div className="font-mono-xs hidden text-muted-foreground md:block">03 / 03</div>
         </div>
@@ -240,26 +237,16 @@ function ProjectCard({ p, flip }: { p: Project; flip: boolean }) {
   return (
     <article
       ref={ref}
-      className={`group grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12 ${shown ? "animate-fade-up" : "opacity-0"}`}
+      className={`group grid grid-cols-1 gap-6 border-t border-border pt-12 md:grid-cols-12 md:gap-12 ${shown ? "animate-fade-up" : "opacity-0"}`}
     >
-      <div className={`md:col-span-5 ${flip ? "md:order-2 md:col-start-8" : ""}`}>
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-muted to-paper">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-display text-[10rem] leading-none text-accent/15 transition-transform duration-700 group-hover:scale-110 group-hover:text-accent/30">
-              {p.num}
-            </span>
-          </div>
-          <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-            <span className="font-mono-xs text-muted-foreground">{p.year}</span>
-            <span className="font-display italic text-foreground">{p.name.split(" ")[0]}</span>
-          </div>
-        </div>
+      <div className="md:col-span-3">
+        <div className="font-mono-xs text-muted-foreground">Project · {p.num}</div>
+        <div className="font-mono-xs mt-2 text-muted-foreground/70">{p.year}</div>
       </div>
-      <div className={`md:col-span-6 md:self-center ${flip ? "md:order-1 md:col-start-1" : "md:col-start-7"}`}>
-        <div className="font-mono-xs mb-3 text-muted-foreground">Project · {p.num}</div>
-        <h3 className="font-display text-4xl md:text-5xl">{p.name}</h3>
-        <p className="font-display mt-3 text-2xl italic text-accent">{p.tagline}</p>
-        <p className="mt-5 max-w-lg leading-relaxed text-muted-foreground">{p.description}</p>
+      <div className="md:col-span-9">
+        <h3 className="font-display text-4xl md:text-6xl tracking-tight transition-colors group-hover:text-accent">{p.name}</h3>
+        <p className="font-display mt-3 text-2xl italic text-accent/90">{p.tagline}</p>
+        <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">{p.description}</p>
         <div className="mt-6 flex flex-wrap gap-2">
           {p.stack.map((s) => (
             <span key={s} className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">{s}</span>
@@ -269,7 +256,7 @@ function ProjectCard({ p, flip }: { p: Project; flip: boolean }) {
           {p.demo && (
             <a href={p.demo} target="_blank" rel="noreferrer" className="link-underline">Live demo ↗</a>
           )}
-          <a href={p.github} target="_blank" rel="noreferrer" className="link-underline">GitHub ↗</a>
+          <a href={p.github} target="_blank" rel="noreferrer" className="link-underline">View on GitHub ↗</a>
         </div>
       </div>
     </article>
@@ -288,10 +275,10 @@ function Connect() {
       <div className="mx-auto max-w-4xl text-center">
         <div className="font-mono-xs text-muted-foreground">(Connect)</div>
         <h2 className="font-display mt-4 text-5xl md:text-7xl leading-[1]">
-          Let's make <span className="italic text-accent">something</span><br />worth shipping.
+          Let's build <span className="italic text-accent">something</span><br />meaningful together.
         </h2>
         <p className="mx-auto mt-6 max-w-md text-muted-foreground">
-          Open to internships, collaborations, and slow conversations over good coffee.
+          Available for internships, professional collaborations, and engineering opportunities. I welcome thoughtful conversations.
         </p>
 
         <div className="mx-auto mt-14 max-w-2xl rounded-3xl border border-border bg-paper p-2 shadow-[0_30px_80px_-40px_oklch(0.2_0.02_60/0.3)]">
