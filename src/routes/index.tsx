@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import drishyaAsset from "@/assets/drishya.jpg.asset.json";
+const profilePhoto = "/drishya.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -146,7 +146,7 @@ function Hero() {
         <div className="relative justify-self-start lg:justify-self-end">
           <div className="relative h-56 w-44 overflow-hidden rounded-2xl border border-border shadow-[0_20px_50px_-20px_oklch(0.2_0.02_60/0.35)] md:h-72 md:w-56">
             <img
-              src={drishyaAsset.url}
+              src={profilePhoto}
               alt="Drishya Gaire"
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
