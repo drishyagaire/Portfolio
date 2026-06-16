@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Drishya Gaire — Full Stack & ML Engineer" },
-      { name: "description", content: "Portfolio of Drishya Gaire — building thoughtful software at the intersection of full stack and machine learning." },
+      { name: "description", content: "Portfolio of Drishya Gaire — exploring full stack development for building thoughtful software ." },
     ],
   }),
   component: Index,
@@ -187,10 +187,10 @@ function About() {
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            I am a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, focused on developing software that bridges practical application engineering with applied machine learning.
+            I am a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, I am a Computer Engineering student at Advanced College of Engineering and Management, exploring full-stack development with a focus on building reliable, user-centered applications from frontend interfaces to backend services.
           </p>
           <p>
-            My recent work spans designing FastAPI services for real-time audio processing, training convolutional neural networks on medical imaging datasets, and building production-grade React interfaces. I place a strong emphasis on <em className="font-display text-foreground">engineering precision</em> — performance, interface clarity, and the quality of every user-facing detail.
+           My recent work includes developing React and Next.js interfaces, building REST APIs with Node.js, working with databases such as MongoDB and Supabase, and experimenting with machine learning projects. I enjoy turning ideas into functional products while paying close attention to performance, usability, and clean engineering practices.
           </p>
           <div className="grid grid-cols-2 gap-6 border-t border-border pt-8 sm:grid-cols-3">
             {[
