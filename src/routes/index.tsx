@@ -275,10 +275,10 @@ function Connect() {
       <div className="mx-auto max-w-4xl text-center">
         <div className="font-mono-xs text-muted-foreground">(Connect)</div>
         <h2 className="font-display mt-4 text-5xl md:text-7xl leading-[1]">
-          Let's make <span className="italic text-accent">something</span><br />worth shipping.
+          Let's build <span className="italic text-accent">something</span><br />meaningful together.
         </h2>
         <p className="mx-auto mt-6 max-w-md text-muted-foreground">
-          Open to internships, collaborations, and slow conversations over good coffee.
+          Available for internships, professional collaborations, and engineering opportunities. I welcome thoughtful conversations.
         </p>
 
         <div className="mx-auto mt-14 max-w-2xl rounded-3xl border border-border bg-paper p-2 shadow-[0_30px_80px_-40px_oklch(0.2_0.02_60/0.3)]">
