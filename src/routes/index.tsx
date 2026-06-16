@@ -220,7 +220,7 @@ function Projects() {
         <div className="mb-20 flex items-end justify-between">
           <div>
             <div className="font-mono-xs text-muted-foreground">(Selected Work)</div>
-            <h2 className="font-display mt-4 text-5xl md:text-7xl">Things I've made.</h2>
+            <h2 className="font-display mt-4 text-5xl md:text-7xl">Selected Projects.</h2>
           </div>
           <div className="font-mono-xs hidden text-muted-foreground md:block">03 / 03</div>
         </div>
