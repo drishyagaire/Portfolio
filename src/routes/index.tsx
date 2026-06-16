@@ -187,7 +187,7 @@ function About() {
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            I am a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, I am a Computer Engineering student at Advanced College of Engineering and Management, exploring full-stack development with a focus on building reliable, user-centered applications from frontend interfaces to backend services.
+            I am a Computer Engineering student at <span className="text-foreground">Advanced College of Engineering and Management</span>, exploring full-stack development with a focus on building reliable, user-centered applications from frontend interfaces to backend services.
           </p>
           <p>
            My recent work includes developing React and Next.js interfaces, building REST APIs with Node.js, working with databases such as MongoDB and Supabase, and experimenting with machine learning projects. I enjoy turning ideas into functional products while paying close attention to performance, usability, and clean engineering practices.
