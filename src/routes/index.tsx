@@ -118,43 +118,40 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="relative px-6 pt-40 pb-24 md:px-12 md:pt-48 md:pb-32">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-end">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 lg:grid-cols-[1fr_auto] lg:items-start">
         <div className="animate-fade-up">
           <div className="font-mono-xs mb-8 flex items-center gap-3 text-muted-foreground">
             <span className="inline-block h-px w-8 bg-foreground/60" />
             Portfolio · 2026
           </div>
           <h1 className="font-display text-[clamp(2.75rem,9vw,7.5rem)] leading-[0.95] tracking-tight">
-            Hi, I'm <span className="italic text-accent">Drishya</span>
-            <br />
-            Gaire.
+            Drishya <span className="italic text-accent">Gaire</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            I teach machines to listen, and browsers to feel. Computer engineering
-            student in Kathmandu, somewhere between a <em className="font-display text-foreground">React component</em> and a <em className="font-display text-foreground">convolutional layer</em>.
+            Computer Engineering student based in Kathmandu, building reliable
+            software at the intersection of <em className="font-display text-foreground">full-stack development</em> and <em className="font-display text-foreground">applied machine learning</em>.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <a
               href="#work"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground px-7 py-4 text-sm text-background transition-all hover:bg-accent"
             >
-              See what I'm building
+              View selected work
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
-            <a href="#connect" className="link-underline text-sm">Say hello</a>
+            <a href="#connect" className="link-underline text-sm">Get in touch</a>
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-sm lg:mx-0">
-          <div className="absolute -inset-4 rotate-3 rounded-[2rem] bg-accent/10" aria-hidden />
-          <div className="relative overflow-hidden rounded-[1.5rem] border border-border shadow-[0_30px_80px_-30px_oklch(0.2_0.02_60/0.35)]">
+        <div className="relative justify-self-start lg:justify-self-end">
+          <div className="relative h-40 w-32 overflow-hidden rounded-2xl border border-border shadow-[0_20px_50px_-20px_oklch(0.2_0.02_60/0.35)] md:h-48 md:w-40">
             <img
               src={drishyaAsset.url}
               alt="Drishya Gaire"
-              className="aspect-[4/5] w-full object-cover grayscale-[15%] transition-all duration-700 hover:grayscale-0 hover:scale-105"
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
-          <div className="font-mono-xs absolute -bottom-4 -left-4 rounded-full border border-border bg-paper px-4 py-2 text-muted-foreground">
+          <div className="font-mono-xs mt-3 text-right text-muted-foreground">
             Kathmandu, NP
           </div>
         </div>
